@@ -1,0 +1,324 @@
+{
+  "schemaVersion": "1.0",
+  "standard": "SRDS-L2",
+  "profile": "full-product",
+  "scope": "projects/healthcare/sentraverse-neural",
+  "reviewed": "2026-11-20",
+  "categories": {
+    "identity": {
+      "state": "documented",
+      "document": "README.md",
+      "evidence": [
+        "package.json",
+        "app/page.tsx",
+        "components/neural/story.ts"
+      ],
+      "rationale": "Rewritten from the real entrypoints, chapters and Vera route; capabilities table separates working from unverified."
+    },
+    "agent_guidance": {
+      "state": "documented",
+      "document": "AGENTS.md",
+      "evidence": [
+        "project.contract.json",
+        ".agents/HANDOFF.md"
+      ],
+      "rationale": "Existing router expanded: Vera limit corrected to the Upstash implementation and docs read order plus acceptance added."
+    },
+    "architecture": {
+      "state": "documented",
+      "document": "docs/architecture.md",
+      "evidence": [
+        "app/layout.tsx",
+        "app/page.tsx",
+        "components/neural/NeuralJourney.tsx",
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts"
+      ],
+      "rationale": "Expanded: previous text claimed no API or environment; now maps components, trust boundaries and failure modes."
+    },
+    "engineering": {
+      "state": "documented",
+      "document": "docs/development.md",
+      "evidence": [
+        "package.json",
+        "scripts/pnpm.mjs",
+        "scripts/legacy-film/extract.mjs"
+      ],
+      "rationale": "Versions, install, run, configuration and film re-export commands taken from package.json and scripts."
+    },
+    "security": {
+      "state": "documented",
+      "document": "docs/security.md",
+      "evidence": [
+        "next.config.mjs",
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts",
+        "scripts/deploy-dry-run.mjs"
+      ],
+      "rationale": "Secrets, input limits, rate limit, headers and known gaps read from route, limit, config and dry-run."
+    },
+    "operations": {
+      "state": "documented",
+      "document": "docs/runbook.md",
+      "evidence": [
+        ".agents/HANDOFF.md",
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts"
+      ],
+      "rationale": "Ownership, routine checks, key rotation, disabling Vera and rollback steps from recorded operations."
+    },
+    "governance": {
+      "state": "documented",
+      "document": "docs/governance.md",
+      "evidence": [
+        "project.contract.json",
+        ".agents/CONTEXT.md"
+      ],
+      "rationale": "Risk tiers, protected areas, records and human authority for this capsule under monorepo AGENTS."
+    },
+    "api_integrations": {
+      "state": "documented",
+      "document": "docs/integrations.md",
+      "evidence": [
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts",
+        "components/VeraNeuralWidget.tsx"
+      ],
+      "rationale": "Documents the Vera endpoint contract, Dify and Upstash calls, timeouts and outbound links."
+    },
+    "data_persistence": {
+      "state": "documented",
+      "document": "docs/data.md",
+      "evidence": [
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts",
+        "components/neural/film.ts"
+      ],
+      "rationale": "Upstash counter keys, conversation handling, environment names and film versions; expanded from a stale no-data note."
+    },
+    "deployment": {
+      "state": "documented",
+      "document": "docs/deployment.md",
+      "evidence": [
+        ".github/workflows/ci.yml",
+        "scripts/deploy-dry-run.mjs",
+        ".agents/HANDOFF.md"
+      ],
+      "rationale": "Release path, CI, Vercel environments, rollback and the open repository question."
+    },
+    "observability": {
+      "state": "documented",
+      "document": "docs/observability.md",
+      "evidence": [
+        "app/api/vera/chat/route.ts",
+        "e2e/neural.spec.ts"
+      ],
+      "rationale": "Lists the console.error signals, where logs live and the absence of health checks or alerting."
+    },
+    "architecture_decisions": {
+      "state": "documented",
+      "document": ".agents/DECISIONS.md",
+      "evidence": [
+        ".agents/DECISIONS.md",
+        ".agents/HANDOFF.md"
+      ],
+      "rationale": "Existing dated decision log retained; the 2026-10-11 Vera decision and the 2026-11-20 docs decision appended from recorded evidence."
+    },
+    "collaboration": {
+      "state": "not_applicable",
+      "rationale": "Single-owner capsule (MIT LICENSE, owner-maintained); no CONTRIBUTING file, issue templates or external contribution process exists in the repository."
+    },
+    "release_history": {
+      "state": "not_applicable",
+      "rationale": "No release tags or version bumps exist (package.json stays 1.0.0); publications are snapshots recorded in .agents/HANDOFF.md, not releases."
+    },
+    "regulatory_safety": {
+      "state": "documented",
+      "document": "docs/regulatory-safety.md",
+      "evidence": [
+        "components/VeraNeuralWidget.tsx",
+        "components/neural/story.ts"
+      ],
+      "rationale": "Healthcare-domain site without patient data; Vera quick prompts raise clinical topics, so the boundary is documented."
+    }
+  },
+  "deliverables": {
+    "product_identity": {
+      "state": "documented",
+      "document": "README.md",
+      "evidence": [
+        "package.json",
+        "app/page.tsx",
+        "components/neural/story.ts"
+      ],
+      "rationale": "Rewritten from the real entrypoints, chapters and Vera route; capabilities table separates working from unverified."
+    },
+    "agent_instructions": {
+      "state": "documented",
+      "document": "AGENTS.md",
+      "evidence": [
+        "project.contract.json",
+        ".agents/HANDOFF.md"
+      ],
+      "rationale": "Existing router expanded: Vera limit corrected to the Upstash implementation and docs read order plus acceptance added."
+    },
+    "product_scope": {
+      "state": "documented",
+      "document": "docs/product-scope.md",
+      "evidence": [
+        "components/neural/story.ts",
+        "components/VeraNeuralWidget.tsx",
+        "e2e/neural.spec.ts"
+      ],
+      "rationale": "Users, workflows, out-of-scope and non-functional limits derived from story, widget and e2e coverage."
+    },
+    "system_architecture": {
+      "state": "documented",
+      "document": "docs/architecture.md",
+      "evidence": [
+        "app/layout.tsx",
+        "app/page.tsx",
+        "components/neural/NeuralJourney.tsx",
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts"
+      ],
+      "rationale": "Expanded: previous text claimed no API or environment; now maps components, trust boundaries and failure modes."
+    },
+    "architecture_decisions": {
+      "state": "documented",
+      "document": ".agents/DECISIONS.md",
+      "evidence": [
+        ".agents/DECISIONS.md",
+        ".agents/HANDOFF.md"
+      ],
+      "rationale": "Existing dated decision log retained; the 2026-10-11 Vera decision and the 2026-11-20 docs decision appended from recorded evidence."
+    },
+    "developer_setup": {
+      "state": "documented",
+      "document": "docs/development.md",
+      "evidence": [
+        "package.json",
+        "scripts/pnpm.mjs",
+        "scripts/legacy-film/extract.mjs"
+      ],
+      "rationale": "Versions, install, run, configuration and film re-export commands taken from package.json and scripts."
+    },
+    "testing_strategy": {
+      "state": "documented",
+      "document": "docs/testing.md",
+      "evidence": [
+        "components/neural/timeline.test.mjs",
+        "app/api/vera/chat/limit.test.mjs",
+        "e2e/smoke.spec.ts",
+        "playwright.config.ts"
+      ],
+      "rationale": "Expanded with the full unit and e2e inventory and the untested route and widget gaps."
+    },
+    "verification_evidence": {
+      "state": "documented",
+      "document": "docs/verification.md",
+      "evidence": [
+        "project.contract.json",
+        "scripts/deploy-dry-run.mjs"
+      ],
+      "rationale": "Records the 2026-11-20 lifecycle run with exit codes and the checks not run."
+    },
+    "security_boundaries": {
+      "state": "documented",
+      "document": "docs/security.md",
+      "evidence": [
+        "next.config.mjs",
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts",
+        "scripts/deploy-dry-run.mjs"
+      ],
+      "rationale": "Secrets, input limits, rate limit, headers and known gaps read from route, limit, config and dry-run."
+    },
+    "operations_runbook": {
+      "state": "documented",
+      "document": "docs/runbook.md",
+      "evidence": [
+        ".agents/HANDOFF.md",
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts"
+      ],
+      "rationale": "Ownership, routine checks, key rotation, disabling Vera and rollback steps from recorded operations."
+    },
+    "troubleshooting": {
+      "state": "documented",
+      "document": "docs/troubleshooting.md",
+      "evidence": [
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts",
+        "components/neural/renderer.ts",
+        "components/neural/journey.module.css"
+      ],
+      "rationale": "Failure signatures mapped to the exact error strings and fallbacks in code and HANDOFF quirks."
+    },
+    "governance_boundaries": {
+      "state": "documented",
+      "document": "docs/governance.md",
+      "evidence": [
+        "project.contract.json",
+        ".agents/CONTEXT.md"
+      ],
+      "rationale": "Risk tiers, protected areas, records and human authority for this capsule under monorepo AGENTS."
+    },
+    "api_integrations": {
+      "state": "documented",
+      "document": "docs/integrations.md",
+      "evidence": [
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts",
+        "components/VeraNeuralWidget.tsx"
+      ],
+      "rationale": "Documents the Vera endpoint contract, Dify and Upstash calls, timeouts and outbound links."
+    },
+    "data_model": {
+      "state": "documented",
+      "document": "docs/data.md",
+      "evidence": [
+        "app/api/vera/chat/route.ts",
+        "app/api/vera/chat/limit.ts",
+        "components/neural/film.ts"
+      ],
+      "rationale": "Upstash counter keys, conversation handling, environment names and film versions; expanded from a stale no-data note."
+    },
+    "deployment_release": {
+      "state": "documented",
+      "document": "docs/deployment.md",
+      "evidence": [
+        ".github/workflows/ci.yml",
+        "scripts/deploy-dry-run.mjs",
+        ".agents/HANDOFF.md"
+      ],
+      "rationale": "Release path, CI, Vercel environments, rollback and the open repository question."
+    },
+    "observability": {
+      "state": "documented",
+      "document": "docs/observability.md",
+      "evidence": [
+        "app/api/vera/chat/route.ts",
+        "e2e/neural.spec.ts"
+      ],
+      "rationale": "Lists the console.error signals, where logs live and the absence of health checks or alerting."
+    },
+    "regulatory_safety": {
+      "state": "documented",
+      "document": "docs/regulatory-safety.md",
+      "evidence": [
+        "components/VeraNeuralWidget.tsx",
+        "components/neural/story.ts"
+      ],
+      "rationale": "Healthcare-domain site without patient data; Vera quick prompts raise clinical topics, so the boundary is documented."
+    },
+    "collaboration": {
+      "state": "not_applicable",
+      "rationale": "Single-owner capsule (MIT LICENSE, owner-maintained); no CONTRIBUTING file, issue templates or external contribution process exists in the repository."
+    },
+    "release_history": {
+      "state": "not_applicable",
+      "rationale": "No release tags or version bumps exist (package.json stays 1.0.0); publications are snapshots recorded in .agents/HANDOFF.md, not releases."
+    }
+  }
+}
