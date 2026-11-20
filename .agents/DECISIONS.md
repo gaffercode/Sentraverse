@@ -3,6 +3,17 @@
 Append-only, newest first. Record only durable decisions that concern this capsule. Each entry
 has a dated heading, the decision, a short rationale, and its evidence.
 
+## 2026-11-20 (repository) — The capsule's own repository is gaffercode/Sentraverse (MIT)
+
+Decision: the capsule publishes to the public repository https://github.com/gaffercode/Sentraverse
+under the MIT license. This supersedes the 2026-10-09 decision for `drferdi/Sentraverse-N` and
+answers the repository question left open by the 2026-11-20 docs entry.
+
+Rationale: Gaffer: the `drferdi` GitHub account is no longer active; the right account is
+https://github.com/gaffercode. Gaffer chose MIT, the license already on that repository.
+
+Evidence: first publish `c67f2e5` on its `main`; `project.contract.json` `repository`.
+
 ## 2026-11-20 (docs) — SRDS-FULL documentation lives flat under `docs/`
 
 Decision: the twelve mandatory SRDS-FULL v1.2 deliverables and the applicable conditional ones

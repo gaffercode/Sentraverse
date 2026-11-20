@@ -1,5 +1,11 @@
 # HANDOFF
 
+## 2026-11-20 - Published to gaffercode/Sentraverse, MIT (Claude)
+
+- Gaffer chose MIT for the public repo `gaffercode/Sentraverse` (its web-made LICENSE); capsule `LICENSE`, `package.json`, README and manifest follow (`bc978726`).
+- Published capsule only: `git archive bc978726:projects/healthcare/sentraverse-neural` copied onto the repo's `main` (`5c99a32`, LICENSE only), tree checked identical to the capsule, one commit `c67f2e5` "Initial import of Sentraverse Neural" as `gaffercode`, pushed over HTTPS as gaffercode (SSH maps to drferdi and is denied). Release clone: `D:/DEV/sentraverse-release-2026-11-20/public`.
+- Not done: `project.contract.json` still declares `drferdi/Sentraverse-N`; no Vercel project is known to watch the new repo.
+
 ## 2026-11-20 - SRDS-FULL documentation (Claude)
 
 - Branch `docs/sentraverse-neural-srds` (local, not pushed). Docs only; no code, contract or CI change.

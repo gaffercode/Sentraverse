@@ -13,11 +13,14 @@ flowchart LR
 ```
 
 1. Work is committed in the monorepo under `projects/healthcare/sentraverse-neural/`.
-2. Publication copies the capsule to its own repository. `project.contract.json` declares
-   `git@github.com:drferdi/Sentraverse-N.git`; the 2026-10-11 publish went to its `main` as a
-   snapshot on top of GitHub main (`.agents/HANDOFF.md`). On 2026-11-20 Gaffer also named
-   `https://github.com/gaffercode/Sentraverse`; which repository is canonical is an open owner
-   decision, and the contract is not changed here.
+2. Publication copies the capsule, and only the capsule, to its own public repository
+   `https://github.com/gaffercode/Sentraverse` (MIT; `project.contract.json` `repository`). The
+   GitHub account `drferdi` is no longer active; the old `drferdi/Sentraverse-N` is history only.
+   Procedure: `git archive <commit>:projects/healthcare/sentraverse-neural` into a clone of the
+   repository, check the tree is identical to the capsule, bring in any commit made on GitHub
+   first, commit as `gaffercode` (author and committer), push over HTTPS as gaffercode (this
+   machine's SSH key maps to `drferdi` and is denied). The first publish was `c67f2e5` on
+   2026-11-20.
 3. `.github/workflows/ci.yml` runs lint, unit tests and build on pushes to `main`, `master`,
    `claude/**`, `feature/**` and on pull requests. Playwright is not in CI.
 4. Vercel builds and serves the site. Environment variables are set per environment in the

@@ -1,7 +1,7 @@
 # Prompt for Fable 5.2: Sentraverse neural journey, world-class redesign pass
 
 > Paste everything below this line into Fable 5.2, running in Claude Code inside a clone of
-> `drferdi/Sentraverse-N` (the source of https://sentraverseii.vercel.app).
+> `gaffercode/Sentraverse` (the public repository of the site at https://sentraverseii.vercel.app).
 
 ---
 
