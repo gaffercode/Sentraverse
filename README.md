@@ -12,35 +12,35 @@ Status descriptions distinguish implementation evidence from executed verificati
   <img src="app/icon.png" alt="Official Sentraverse neural mark on dark background" width="170" />
 </a>
 
-<small><b><code>SENTRAVERSE NEURAL</code></b></small>
+<small><small><b><code>SENTRAVERSE NEURAL</code></b></small></small>
 
-<small>Cinematic brand experience · Public web application</small>
+<small><small>Cinematic brand experience · Public web application</small></small>
 
-<img src="https://img.shields.io/badge/SENTRA-BRAND%20EXPERIENCE-5B8CFF?style=flat-square" alt="Sentra brand experience" />
-<img src="https://img.shields.io/badge/DOMAIN-HEALTHCARE-22D3EE?style=flat-square" alt="Healthcare capsule classification" />
+<img src="https://img.shields.io/badge/SENTRA-BRAND%20EXPERIENCE-5B8CFF?style=flat-square" alt="Sentra brand experience" height="19" />
+<img src="https://img.shields.io/badge/DOMAIN-HEALTHCARE-22D3EE?style=flat-square" alt="Healthcare capsule classification" height="19" />
 
 </td>
 <td width="66%" valign="top">
 
-**SENTRA / SENTRAVERSE NEURAL**
+<small><b>SENTRA / SENTRAVERSE NEURAL</b></small>
 
 <a href="https://sentraverseii.vercel.app/">
-  <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=700&size=33&duration=3400&pause=1500&color=EB5939&vCenter=true&width=620&height=50&lines=Intelligence+begins+as+connection." alt="Intelligence begins as connection." />
+  <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=700&size=32&duration=3400&pause=1500&color=EB5939&vCenter=true&width=620&height=50&lines=Intelligence+begins+as+connection." alt="Intelligence begins as connection." />
 </a>
 
-**Operational signal:** Fifteen chapters · Five divisions in the current implementation · One continuous scroll-driven narrative.
+<small><b>Operational signal:</b> Fifteen chapters · Five divisions in the current implementation · One continuous scroll-driven narrative.</small>
 
-<a href="https://sentrahai.com/"><b>Sentra Artificial Intelligence</b></a>
+<small><a href="https://sentrahai.com/"><b>Sentra Artificial Intelligence</b></a></small>
 
-A cinematic introduction to the Sentra ecosystem, from a single neural connection to the founder's film, with Vera available as a separate AI-assisted information surface.
+<small>A cinematic introduction to the Sentra ecosystem, from a single neural connection to the founder's film, with Vera available as a separate AI-assisted information surface.</small>
 
-<small>Architected and built by <b>dr. Ferdi Iskandar (the Gaffer)</b>.</small>
+<small><small>Architected and built by <b>dr. Ferdi Iskandar (the Gaffer)</b>.</small></small>
 
-<a href="https://github.com/gaffercode/Sentraverse"><img src="https://img.shields.io/badge/GitHub-Repository-64748B?style=flat-square&logo=github" alt="GitHub repository" /></a>
-<a href="https://sentraverseii.vercel.app/"><img src="https://img.shields.io/badge/Site-Sentraverse-22D3EE?style=flat-square" alt="Recorded public site URL" /></a>
-<a href="https://sentrahai.com/"><img src="https://img.shields.io/badge/Ecosystem-Sentra-5B8CFF?style=flat-square" alt="Sentra ecosystem" /></a>
+<a href="https://github.com/gaffercode/Sentraverse"><img src="https://img.shields.io/badge/GitHub-Repository-64748B?style=flat-square&logo=github" alt="GitHub repository" height="19" /></a>
+<a href="https://sentraverseii.vercel.app/"><img src="https://img.shields.io/badge/Site-Sentraverse-22D3EE?style=flat-square" alt="Recorded public site URL" height="19" /></a>
+<a href="https://sentrahai.com/"><img src="https://img.shields.io/badge/Ecosystem-Sentra-5B8CFF?style=flat-square" alt="Sentra ecosystem" height="19" /></a>
 
-<sub><code>VISITOR → STORY → NEURAL FIELD → DIVISIONS → THE LEGACY → HUMAN EXPLORATION</code></sub>
+<small><sub><code>VISITOR → STORY → NEURAL FIELD → DIVISIONS → THE LEGACY → HUMAN EXPLORATION</code></sub></small>
 
 </td>
 </tr>
@@ -63,19 +63,19 @@ Visitors move through **15 chapters** on a single GSAP master timeline. The jour
 <table width="100%">
 <tr>
 <td width="33%" valign="top">
-<small><b><code>I · NARRATIVE</code></b></small>
+<small><small><b><code>I · NARRATIVE</code></b></small></small>
 
-<small>One pinned journey. Fifteen chapters. A timeline shared by motion, stage, and film.</small>
+<small><small>One pinned journey. Fifteen chapters. A timeline shared by motion, stage, and film.</small></small>
 </td>
 <td width="33%" valign="top">
-<small><b><code>II · EXPERIENCE</code></b></small>
+<small><small><b><code>II · EXPERIENCE</code></b></small></small>
 
-<small>WebGL field, Canvas 2D fallback, mobile layout, reduced-motion and no-JavaScript reading paths.</small>
+<small><small>WebGL field, Canvas 2D fallback, mobile layout, reduced-motion and no-JavaScript reading paths.</small></small>
 </td>
 <td width="33%" valign="top">
-<small><b><code>III · INFORMATION</code></b></small>
+<small><small><b><code>III · INFORMATION</code></b></small></small>
 
-<small>Vera's optional chat proxy, bounded inputs and request limits, with AI behavior defined outside this repository.</small>
+<small><small>Vera's optional chat proxy, bounded inputs and request limits, with AI behavior defined outside this repository.</small></small>
 </td>
 </tr>
 </table>
@@ -88,38 +88,38 @@ Visitors move through **15 chapters** on a single GSAP master timeline. The jour
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<small><b><code>ONE MASTER CLOCK</code></b></small>
+<small><small><b><code>ONE MASTER CLOCK</code></b></small></small>
 
-<small>`components/neural/timeline.ts` governs chapter transitions, signal handoffs and film timing. New motion must respect the mapped phases and their tests.</small>
+<small><small>`components/neural/timeline.ts` governs chapter transitions, signal handoffs and film timing. New motion must respect the mapped phases and their tests.</small></small>
 </td>
 <td width="50%" valign="top">
-<small><b><code>READABLE WITHOUT EFFECTS</code></b></small>
+<small><small><b><code>READABLE WITHOUT EFFECTS</code></b></small></small>
 
-<small>Reduced-motion visitors receive unpinned reading mode. WebGL failures fall back to Canvas 2D; the chapter text remains accessible if rendering is unavailable.</small>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<small><b><code>IMMUTABLE FILM VERSIONS</code></b></small>
-
-<small>THE LEGACY uses frame sequences under `public/legacy-film/&lt;version&gt;/`. Re-exports create a new version; existing deployed frames are not overwritten.</small>
-</td>
-<td width="50%" valign="top">
-<small><b><code>ONE CAPSULE, OWN RUNTIME</code></b></small>
-
-<small>Node, pnpm lockfile, scripts, project contract and build configuration belong to this repository. External Sentra pages are ordinary hyperlinks, not parent dependencies.</small>
+<small><small>Reduced-motion visitors receive unpinned reading mode. WebGL failures fall back to Canvas 2D; the chapter text remains accessible if rendering is unavailable.</small></small>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<small><b><code>NO MAGIC WITHOUT AUDIT</code></b></small>
+<small><small><b><code>IMMUTABLE FILM VERSIONS</code></b></small></small>
 
-<small>Describe the actual source, test, failure mode and verification status behind each capability. A configured service is not automatically a verified service.</small>
+<small><small>THE LEGACY uses frame sequences under `public/legacy-film/&lt;version&gt;/`. Re-exports create a new version; existing deployed frames are not overwritten.</small></small>
 </td>
 <td width="50%" valign="top">
-<small><b><code>HUMAN PUBLICATION AUTHORITY</code></b></small>
+<small><small><b><code>ONE CAPSULE, OWN RUNTIME</code></b></small></small>
 
-<small>dr. Ferdi Iskandar owns brand decisions, clinical messaging, credentials, merges and production releases. Automated checks provide evidence, not approval.</small>
+<small><small>Node, pnpm lockfile, scripts, project contract and build configuration belong to this repository. External Sentra pages are ordinary hyperlinks, not parent dependencies.</small></small>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<small><small><b><code>NO MAGIC WITHOUT AUDIT</code></b></small></small>
+
+<small><small>Describe the actual source, test, failure mode and verification status behind each capability. A configured service is not automatically a verified service.</small></small>
+</td>
+<td width="50%" valign="top">
+<small><small><b><code>HUMAN PUBLICATION AUTHORITY</code></b></small></small>
+
+<small><small>dr. Ferdi Iskandar owns brand decisions, clinical messaging, credentials, merges and production releases. Automated checks provide evidence, not approval.</small></small>
 </td>
 </tr>
 </table>
@@ -195,70 +195,70 @@ flowchart TB
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<small><b><code>01 · NARRATIVE CORE</code></b></small>
+<small><small><b><code>01 · NARRATIVE CORE</code></b></small></small>
 
-<small><b>`components/neural/`</b></small>
+<small><small><b>`components/neural/`</b></small></small>
 
-<small>`story.ts` defines the fifteen chapters and five current divisions; `timeline.ts` maps phases and film beats; `NeuralJourney.tsx` owns GSAP matchMedia lifecycle, scroll, sound, progress trace and accessibility modes.</small>
+<small><small>`story.ts` defines the fifteen chapters and five current divisions; `timeline.ts` maps phases and film beats; `NeuralJourney.tsx` owns GSAP matchMedia lifecycle, scroll, sound, progress trace and accessibility modes.</small></small>
 </td>
 <td width="50%" valign="top">
-<small><b><code>02 · LIVING FIELD</code></b></small>
+<small><small><b><code>02 · LIVING FIELD</code></b></small></small>
 
-<small><b>`renderer.ts` and companions</b></small>
+<small><small><b>`renderer.ts` and companions</b></small></small>
 
-<small>`geometry.ts`, `signal.ts`, `handoff.ts`, `tactile.ts` and related modules generate the neural structure, activity cycle and pointer interaction with a Canvas fallback.</small>
+<small><small>`geometry.ts`, `signal.ts`, `handoff.ts`, `tactile.ts` and related modules generate the neural structure, activity cycle and pointer interaction with a Canvas fallback.</small></small>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<small><b><code>03 · THE LEGACY</code></b></small>
+<small><small><b><code>03 · THE LEGACY</code></b></small></small>
 
-<small><b>`LegacyScene.tsx` · `film.ts` · `morph.ts`</b></small>
+<small><small><b>`LegacyScene.tsx` · `film.ts` · `morph.ts`</b></small></small>
 
-<small>Versioned still frames render against the shared master clock. `public/legacy-film/v1/` contains 120 frames plus a poster; the film is not a seeked HTML video.</small>
+<small><small>Versioned still frames render against the shared master clock. `public/legacy-film/v1/` contains 120 frames plus a poster; the film is not a seeked HTML video.</small></small>
 </td>
 <td width="50%" valign="top">
-<small><b><code>04 · VERA INFORMATION SURFACE</code></b></small>
+<small><small><b><code>04 · VERA INFORMATION SURFACE</code></b></small></small>
 
-<small><b>`components/VeraNeuralWidget.tsx` · `app/api/vera/chat/`</b></small>
+<small><small><b>`components/VeraNeuralWidget.tsx` · `app/api/vera/chat/`</b></small></small>
 
-<small>Client-side SSE reader, question validation, daily counter, and server-only Dify proxy. Upstream model, prompt, and data retention are managed outside the repository.</small>
+<small><small>Client-side SSE reader, question validation, daily counter, and server-only Dify proxy. Upstream model, prompt, and data retention are managed outside the repository.</small></small>
 </td>
 </tr>
 </table>
 
 ### Capability matrix
 
-| Capability | Status | Evidence | Important boundary |
+| <small>Capability</small> | <small>Status</small> | <small>Evidence</small> | <small>Important boundary</small> |
 |---|---|---|---|
-| <small>15-chapter, scroll-scrubbed narrative</small> | <small>**IMPLEMENTED**</small> | <small>`story.ts`, `timeline.ts`, `e2e/neural.spec.ts`</small> | <small>Performance varies by device.</small> |
-| <small>Five division discoveries and SentraSquad</small> | <small>**IMPLEMENTED**</small> | <small>`story.ts` and neural E2E cases</small> | <small>Four-division branding proposal is not aligned with current copy.</small> |
-| <small>WebGL neural field with Canvas fallback</small> | <small>**IMPLEMENTED**</small> | <small>`renderer.ts`, E2E coverage</small> | <small>GPU and browser support vary.</small> |
-| <small>Reduced motion and no-JavaScript reading</small> | <small>**IMPLEMENTED**</small> | <small>`NeuralJourney.tsx`, E2E coverage</small> | <small>Safari/iOS release check is separate.</small> |
-| <small>THE LEGACY versioned frame sequence</small> | <small>**IMPLEMENTED**</small> | <small>`film.ts`, `public/legacy-film/v1/`, tests</small> | <small>Existing version directories are immutable.</small> |
-| <small>Vera streaming chat proxy</small> | <small>**IMPLEMENTED**</small> | <small>`route.ts`, `VeraNeuralWidget.tsx`</small> | <small>Live Dify behavior and content accuracy not verified in this documentation revision.</small> |
-| <small>10-message daily rate limiting</small> | <small>**IMPLEMENTED**</small> | <small>`limit.ts`, `limit.test.mjs`</small> | <small>Shared durability depends on Upstash; memory fallback is per instance.</small> |
-| <small>Robots and Organization structured data</small> | <small>**IMPLEMENTED**</small> | <small>`app/robots.ts`, `app/page.tsx`</small> | <small>Canonical URL and sitemap remain pending.</small> |
-| <small>Production analytics / real-user performance telemetry</small> | <small>**NOT IMPLEMENTED**</small> | <small>`docs/observability.md`</small> | <small>INP/LCP field data unavailable.</small> |
+| <small><small>15-chapter, scroll-scrubbed narrative</small></small> | <small><small>**IMPLEMENTED**</small></small> | <small><small>`story.ts`, `timeline.ts`, `e2e/neural.spec.ts`</small></small> | <small><small>Performance varies by device.</small></small> |
+| <small><small>Five division discoveries and SentraSquad</small></small> | <small><small>**IMPLEMENTED**</small></small> | <small><small>`story.ts` and neural E2E cases</small></small> | <small><small>Four-division branding proposal is not aligned with current copy.</small></small> |
+| <small><small>WebGL neural field with Canvas fallback</small></small> | <small><small>**IMPLEMENTED**</small></small> | <small><small>`renderer.ts`, E2E coverage</small></small> | <small><small>GPU and browser support vary.</small></small> |
+| <small><small>Reduced motion and no-JavaScript reading</small></small> | <small><small>**IMPLEMENTED**</small></small> | <small><small>`NeuralJourney.tsx`, E2E coverage</small></small> | <small><small>Safari/iOS release check is separate.</small></small> |
+| <small><small>THE LEGACY versioned frame sequence</small></small> | <small><small>**IMPLEMENTED**</small></small> | <small><small>`film.ts`, `public/legacy-film/v1/`, tests</small></small> | <small><small>Existing version directories are immutable.</small></small> |
+| <small><small>Vera streaming chat proxy</small></small> | <small><small>**IMPLEMENTED**</small></small> | <small><small>`route.ts`, `VeraNeuralWidget.tsx`</small></small> | <small><small>Live Dify behavior and content accuracy not verified in this documentation revision.</small></small> |
+| <small><small>10-message daily rate limiting</small></small> | <small><small>**IMPLEMENTED**</small></small> | <small><small>`limit.ts`, `limit.test.mjs`</small></small> | <small><small>Shared durability depends on Upstash; memory fallback is per instance.</small></small> |
+| <small><small>Robots and Organization structured data</small></small> | <small><small>**IMPLEMENTED**</small></small> | <small><small>`app/robots.ts`, `app/page.tsx`</small></small> | <small><small>Canonical URL and sitemap remain pending.</small></small> |
+| <small><small>Production analytics / real-user performance telemetry</small></small> | <small><small>**NOT IMPLEMENTED**</small></small> | <small><small>`docs/observability.md`</small></small> | <small><small>INP/LCP field data unavailable.</small></small> |
 
 ## 04 / THE ENGINE ROOM
 
 <table width="100%">
 <tr>
 <td width="33%" valign="top">
-<small><b><code>FRONTEND</code></b></small>
+<small><small><b><code>FRONTEND</code></b></small></small>
 
-<small>Next.js 16 App Router, React 19, TypeScript 5.9, GSAP 3.15 with ScrollTrigger and SplitText, Tailwind CSS 4 preflight, Inter and Plus Jakarta Sans.</small>
+<small><small>Next.js 16 App Router, React 19, TypeScript 5.9, GSAP 3.15 with ScrollTrigger and SplitText, Tailwind CSS 4 preflight, Inter and Plus Jakarta Sans.</small></small>
 </td>
 <td width="33%" valign="top">
-<small><b><code>SERVER</code></b></small>
+<small><small><b><code>SERVER</code></b></small></small>
 
-<small>Node.js 24 route runtime for Vera, Dify `chat-messages` streaming proxy and optional Upstash Redis REST API.</small>
+<small><small>Node.js 24 route runtime for Vera, Dify `chat-messages` streaming proxy and optional Upstash Redis REST API.</small></small>
 </td>
 <td width="33%" valign="top">
-<small><b><code>DELIVERY</code></b></small>
+<small><small><b><code>DELIVERY</code></b></small></small>
 
-<small>Independent pnpm 11.21.0 lockfile, webpack build, GitHub Actions lint/test/build, and documented Vercel release workflow.</small>
+<small><small>Independent pnpm 11.21.0 lockfile, webpack build, GitHub Actions lint/test/build, and documented Vercel release workflow.</small></small>
 </td>
 </tr>
 </table>
@@ -375,12 +375,12 @@ node scripts/pnpm.mjs run start
 
 Store server-only values in git-ignored `.env.local` or the host's environment configuration. **Never commit credentials.**
 
-| Variable | Required | Role | Boundary |
+| <small>Variable</small> | <small>Required</small> | <small>Role</small> | <small>Boundary</small> |
 |---|---|---|---|
-| <small>`DIFY_API_KEY`</small> | <small>For Vera only</small> | <small>Dify bearer credential</small> | <small>Server-only; missing key returns HTTP 500 for chat.</small> |
-| <small>`DIFY_API_URL`</small> | <small>No</small> | <small>Overrides default `https://api.dify.ai/v1`</small> | <small>Server-only.</small> |
-| <small>`KV_REST_API_URL`</small> | <small>No</small> | <small>Upstash REST endpoint</small> | <small>Used with the token; absent pair enables memory fallback.</small> |
-| <small>`KV_REST_API_TOKEN`</small> | <small>No</small> | <small>Upstash REST bearer token</small> | <small>Server-only.</small> |
+| <small><small>`DIFY_API_KEY`</small></small> | <small><small>For Vera only</small></small> | <small><small>Dify bearer credential</small></small> | <small><small>Server-only; missing key returns HTTP 500 for chat.</small></small> |
+| <small><small>`DIFY_API_URL`</small></small> | <small><small>No</small></small> | <small><small>Overrides default `https://api.dify.ai/v1`</small></small> | <small><small>Server-only.</small></small> |
+| <small><small>`KV_REST_API_URL`</small></small> | <small><small>No</small></small> | <small><small>Upstash REST endpoint</small></small> | <small><small>Used with the token; absent pair enables memory fallback.</small></small> |
+| <small><small>`KV_REST_API_TOKEN`</small></small> | <small><small>No</small></small> | <small><small>Upstash REST bearer token</small></small> | <small><small>Server-only.</small></small> |
 
 ### Verification commands
 
@@ -442,13 +442,13 @@ The repository's CI is configured to run lint, unit tests and build for pull req
 **No sensitive data without explicit security boundaries.**  
 **No expansion without one solved problem first.**
 
-| Operating question | Product-specific answer |
+| <small>Operating question</small> | <small>Product-specific answer</small> |
 |---|---|
-| <small>What problem is solved?</small> | <small>A coherent, accessible cinematic entry to Sentra's ecosystem.</small> |
-| <small>Who owns the final decision?</small> | <small>dr. Ferdi Iskandar (the Gaffer).</small> |
-| <small>What is outside scope?</small> | <small>Clinical advice, patient data, accounts, payment flows, and the wider Sentra website runtime.</small> |
-| <small>What can fail?</small> | <small>GPU renderer, asset loading, external Dify, Redis, unverified assistant content, release/configuration.</small> |
-| <small>How is it checked?</small> | <small>Source-reviewed contracts, unit tests, Playwright scenarios, lint, types, build, documented manual checks.</small> |
+| <small><small>What problem is solved?</small></small> | <small><small>A coherent, accessible cinematic entry to Sentra's ecosystem.</small></small> |
+| <small><small>Who owns the final decision?</small></small> | <small><small>dr. Ferdi Iskandar (the Gaffer).</small></small> |
+| <small><small>What is outside scope?</small></small> | <small><small>Clinical advice, patient data, accounts, payment flows, and the wider Sentra website runtime.</small></small> |
+| <small><small>What can fail?</small></small> | <small><small>GPU renderer, asset loading, external Dify, Redis, unverified assistant content, release/configuration.</small></small> |
+| <small><small>How is it checked?</small></small> | <small><small>Source-reviewed contracts, unit tests, Playwright scenarios, lint, types, build, documented manual checks.</small></small> |
 
 ## 08 / SENTRA FOUNDATION · AGENT-FIRST ENGINEERING
 
@@ -473,18 +473,18 @@ This repository is a **standalone Sentra product capsule**, documented within th
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<img src="https://img.shields.io/badge/PARENT-SENTRA%20ARTIFICIAL%20INTELLIGENCE-5B8CFF?style=flat-square" alt="Parent organization" />
+<img src="https://img.shields.io/badge/PARENT-SENTRA%20ARTIFICIAL%20INTELLIGENCE-5B8CFF?style=flat-square" alt="Parent organization" height="19" />
 
-<small><b><code>SENTRA ARTIFICIAL INTELLIGENCE</code></b></small>
+<small><small><b><code>SENTRA ARTIFICIAL INTELLIGENCE</code></b></small></small>
 
-<small>Product and brand ecosystem that Sentraverse introduces. The site links visitors to `sentrahai.com` and its ecosystem pages.</small>
+<small><small>Product and brand ecosystem that Sentraverse introduces. The site links visitors to `sentrahai.com` and its ecosystem pages.</small></small>
 </td>
 <td width="50%" valign="top">
-<img src="https://img.shields.io/badge/PRODUCT-SENTRAVERSE%20NEURAL-8B5CF6?style=flat-square" alt="Sentraverse Neural product" />
+<img src="https://img.shields.io/badge/PRODUCT-SENTRAVERSE%20NEURAL-8B5CF6?style=flat-square" alt="Sentraverse Neural product" height="19" />
 
-<small><b><code>SENTRAVERSE NEURAL</code></b></small>
+<small><small><b><code>SENTRAVERSE NEURAL</code></b></small></small>
 
-<small>Public cinematic brand experience. Its repository/contract classifies the capsule under the `healthcare` engineering domain; this does not make the public site a clinical runtime.</small>
+<small><small>Public cinematic brand experience. Its repository/contract classifies the capsule under the `healthcare` engineering domain; this does not make the public site a clinical runtime.</small></small>
 </td>
 </tr>
 </table>
@@ -496,26 +496,26 @@ This repository is a **standalone Sentra product capsule**, documented within th
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<small><b><code>AUTHENTICATION</code></b></small>
+<small><small><b><code>AUTHENTICATION</code></b></small></small>
 
-<small>Public site; no application login, user roles or local user accounts. The optional chat route accepts anonymous requests.</small>
+<small><small>Public site; no application login, user roles or local user accounts. The optional chat route accepts anonymous requests.</small></small>
 </td>
 <td width="50%" valign="top">
-<small><b><code>INPUT LIMITS</code></b></small>
+<small><small><b><code>INPUT LIMITS</code></b></small></small>
 
-<small>Questions must be non-empty strings no longer than 1,000 characters. The route returns 400 or 413 for invalid inputs, 429 after the per-visitor limit.</small>
+<small><small>Questions must be non-empty strings no longer than 1,000 characters. The route returns 400 or 413 for invalid inputs, 429 after the per-visitor limit.</small></small>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<small><b><code>SERVER SECRETS</code></b></small>
+<small><small><b><code>SERVER SECRETS</code></b></small></small>
 
-<small>Dify and Upstash credentials remain on the server. No environment values belong in this public README, static assets, or client source.</small>
+<small><small>Dify and Upstash credentials remain on the server. No environment values belong in this public README, static assets, or client source.</small></small>
 </td>
 <td width="50%" valign="top">
-<small><b><code>EXTERNAL TRUST</code></b></small>
+<small><small><b><code>EXTERNAL TRUST</code></b></small></small>
 
-<small>Dify handles AI inference and retention outside this repo. Upstash may hold a 32-character prefix of a SHA-256 hash of visitor IP for the counter, with 24-hour expiry.</small>
+<small><small>Dify handles AI inference and retention outside this repo. Upstash may hold a 32-character prefix of a SHA-256 hash of visitor IP for the counter, with 24-hour expiry.</small></small>
 </td>
 </tr>
 </table>
@@ -529,15 +529,15 @@ See [security](docs/security.md), [data handling](docs/data.md) and [clinical sa
 
 ## 11 / API · INTEGRATION SURFACE
 
-| Method / interface | Route / target | Responsibility | Trust / failure |
+| <small>Method / interface</small> | <small>Route / target</small> | <small>Responsibility</small> | <small>Trust / failure</small> |
 |---|---|---|---|
-| <small>GET</small> | <small>`/`</small> | <small>Render the public story and mount Vera</small> | <small>No login; readable fallback is available.</small> |
-| <small>GET</small> | <small>`/legacy-film/v1/*`</small> | <small>Serve immutable versioned frames</small> | <small>Missing/not-yet-loaded frames use the closest loaded frame when possible.</small> |
-| <small>GET</small> | <small>`/robots.txt`</small> | <small>Permit crawler access</small> | <small>Canonical and sitemap not yet configured.</small> |
-| <small>POST</small> | <small>`/api/vera/chat`</small> | <small>Validate, rate-limit, proxy and stream</small> | <small>400 / 413 / 429 / 500 / 502 error paths.</small> |
-| <small>POST (server)</small> | <small>Dify `/chat-messages`</small> | <small>External AI stream using server bearer key</small> | <small>Provider or credential failure is surfaced without raw upstream error text.</small> |
-| <small>POST (server)</small> | <small>Upstash `/pipeline`</small> | <small>Daily counter, TTL and hashed-IP key</small> | <small>2-second timeout; local-memory fallback if unavailable.</small> |
-| <small>Outbound link</small> | <small>`https://sentrahai.com`</small> | <small>Open broader Sentra ecosystem pages</small> | <small>Separate capsule and runtime, never imported into this app.</small> |
+| <small><small>GET</small></small> | <small><small>`/`</small></small> | <small><small>Render the public story and mount Vera</small></small> | <small><small>No login; readable fallback is available.</small></small> |
+| <small><small>GET</small></small> | <small><small>`/legacy-film/v1/*`</small></small> | <small><small>Serve immutable versioned frames</small></small> | <small><small>Missing/not-yet-loaded frames use the closest loaded frame when possible.</small></small> |
+| <small><small>GET</small></small> | <small><small>`/robots.txt`</small></small> | <small><small>Permit crawler access</small></small> | <small><small>Canonical and sitemap not yet configured.</small></small> |
+| <small><small>POST</small></small> | <small><small>`/api/vera/chat`</small></small> | <small><small>Validate, rate-limit, proxy and stream</small></small> | <small><small>400 / 413 / 429 / 500 / 502 error paths.</small></small> |
+| <small><small>POST (server)</small></small> | <small><small>Dify `/chat-messages`</small></small> | <small><small>External AI stream using server bearer key</small></small> | <small><small>Provider or credential failure is surfaced without raw upstream error text.</small></small> |
+| <small><small>POST (server)</small></small> | <small><small>Upstash `/pipeline`</small></small> | <small><small>Daily counter, TTL and hashed-IP key</small></small> | <small><small>2-second timeout; local-memory fallback if unavailable.</small></small> |
+| <small><small>Outbound link</small></small> | <small><small>`https://sentrahai.com`</small></small> | <small><small>Open broader Sentra ecosystem pages</small></small> | <small><small>Separate capsule and runtime, never imported into this app.</small></small> |
 
 **Vera request:** JSON body with required `query`, optional `conversation_id` and optional `user`. Successful responses use `text/event-stream`. The client stores the conversation ID in React state for the current tab only. Detailed contracts: [integrations](docs/integrations.md).
 
@@ -546,34 +546,34 @@ See [security](docs/security.md), [data handling](docs/data.md) and [clinical sa
 <table width="100%">
 <tr>
 <td width="33%" valign="top">
-<small><b><code>STATIC ASSETS</code></b></small>
+<small><small><b><code>STATIC ASSETS</code></b></small></small>
 
-<small>Brand logo, face image, and versioned film frames are committed to the repository and published intentionally.</small>
+<small><small>Brand logo, face image, and versioned film frames are committed to the repository and published intentionally.</small></small>
 </td>
 <td width="33%" valign="top">
-<small><b><code>EPHEMERAL / EXTERNAL STATE</code></b></small>
+<small><small><b><code>EPHEMERAL / EXTERNAL STATE</code></b></small></small>
 
-<small>Vera conversation ID lives in client memory. Dify stores or processes conversations under external provider policy. Upstash counter has a 24-hour TTL, else ephemeral instance memory.</small>
+<small><small>Vera conversation ID lives in client memory. Dify stores or processes conversations under external provider policy. Upstash counter has a 24-hour TTL, else ephemeral instance memory.</small></small>
 </td>
 <td width="33%" valign="top">
-<small><b><code>OBSERVABILITY</code></b></small>
+<small><small><b><code>OBSERVABILITY</code></b></small></small>
 
-<small>Runtime errors and request codes appear in Vercel logs; CI build output in GitHub Actions. No in-repository uptime monitoring, app analytics or RUM instrumentation is documented.</small>
+<small><small>Runtime errors and request codes appear in Vercel logs; CI build output in GitHub Actions. No in-repository uptime monitoring, app analytics or RUM instrumentation is documented.</small></small>
 </td>
 </tr>
 </table>
 
 ## 13 / FAILURE MODES · LIMITATIONS · TROUBLESHOOTING
 
-| Signal / symptom | Meaning | Operator action |
+| <small>Signal / symptom</small> | <small>Meaning</small> | <small>Operator action</small> |
 |---|---|---|
-| <small>WebGL unavailable or context lost</small> | <small>Canvas 2D fallback is expected.</small> | <small>Verify chapter readability and inspect renderer behavior.</small> |
-| <small>Reduced-motion setting</small> | <small>Unpinned reading presentation is expected.</small> | <small>Verify content remains complete and navigable.</small> |
-| <small>Vera HTTP 500</small> | <small>Missing Dify key or server exception.</small> | <small>Check server-only environment and runtime logs; escalation for credential changes.</small> |
-| <small>Vera HTTP 502</small> | <small>Dify unavailable, non-2xx or missing response stream.</small> | <small>Check provider status/quota and server logs.</small> |
-| <small>Vera HTTP 429</small> | <small>Message budget exceeded.</small> | <small>Respect `Retry-After`; inspect Upstash only when incident response requires it.</small> |
-| <small>Unexpected reset of daily limit</small> | <small>Upstash absent/unreachable and per-instance memory in use.</small> | <small>Inspect optional Redis environment configuration.</small> |
-| <small>Dry-run says build artifact missing</small> | <small>`.next/BUILD_ID` not created.</small> | <small>Run a fresh build before the dry-run.</small> |
+| <small><small>WebGL unavailable or context lost</small></small> | <small><small>Canvas 2D fallback is expected.</small></small> | <small><small>Verify chapter readability and inspect renderer behavior.</small></small> |
+| <small><small>Reduced-motion setting</small></small> | <small><small>Unpinned reading presentation is expected.</small></small> | <small><small>Verify content remains complete and navigable.</small></small> |
+| <small><small>Vera HTTP 500</small></small> | <small><small>Missing Dify key or server exception.</small></small> | <small><small>Check server-only environment and runtime logs; escalation for credential changes.</small></small> |
+| <small><small>Vera HTTP 502</small></small> | <small><small>Dify unavailable, non-2xx or missing response stream.</small></small> | <small><small>Check provider status/quota and server logs.</small></small> |
+| <small><small>Vera HTTP 429</small></small> | <small><small>Message budget exceeded.</small></small> | <small><small>Respect `Retry-After`; inspect Upstash only when incident response requires it.</small></small> |
+| <small><small>Unexpected reset of daily limit</small></small> | <small><small>Upstash absent/unreachable and per-instance memory in use.</small></small> | <small><small>Inspect optional Redis environment configuration.</small></small> |
+| <small><small>Dry-run says build artifact missing</small></small> | <small><small>`.next/BUILD_ID` not created.</small></small> | <small><small>Run a fresh build before the dry-run.</small></small> |
 
 **Known limitations:** no confirmed field INP/LCP metrics, no current Safari/iOS release test evidence, no unit/E2E test for Vera's widget, no direct automated route contract test, no canonical URL/sitemap, and no automated clinical-content verification of the external Dify app. No production health/uptime monitor or alert routing is documented.
 
@@ -594,15 +594,15 @@ For a potential vulnerability, **contact the human repository owner privately** 
 
 ## 16 / ACTIVE STACK
 
-| Layer | Repository-evidenced technology |
+| <small>Layer</small> | <small>Repository-evidenced technology</small> |
 |---|---|
-| <small>Web framework and UI</small> | <small>Next.js 16.3.6, React 19.3.0, React DOM 19.3.0</small> |
-| <small>Motion and rendering</small> | <small>GSAP 3.15.0, WebGL and Canvas 2D APIs</small> |
-| <small>Styling and fonts</small> | <small>Tailwind CSS 4.3.3 (preflight), Inter, Plus Jakarta Sans, CSS modules</small> |
-| <small>Language / runtime</small> | <small>TypeScript 5.9.3, Node.js 24</small> |
-| <small>Package / build</small> | <small>pnpm 11.21.0, webpack-backed Next.js build</small> |
-| <small>Server and AI integration</small> | <small>Next.js Node route, Dify streaming API, optional Upstash Redis REST</small> |
-| <small>Tests / delivery</small> | <small>Node test runner, ESLint 9, Playwright 1.63.0, GitHub Actions, documented Vercel host</small> |
+| <small><small>Web framework and UI</small></small> | <small><small>Next.js 16.3.6, React 19.3.0, React DOM 19.3.0</small></small> |
+| <small><small>Motion and rendering</small></small> | <small><small>GSAP 3.15.0, WebGL and Canvas 2D APIs</small></small> |
+| <small><small>Styling and fonts</small></small> | <small><small>Tailwind CSS 4.3.3 (preflight), Inter, Plus Jakarta Sans, CSS modules</small></small> |
+| <small><small>Language / runtime</small></small> | <small><small>TypeScript 5.9.3, Node.js 24</small></small> |
+| <small><small>Package / build</small></small> | <small><small>pnpm 11.21.0, webpack-backed Next.js build</small></small> |
+| <small><small>Server and AI integration</small></small> | <small><small>Next.js Node route, Dify streaming API, optional Upstash Redis REST</small></small> |
+| <small><small>Tests / delivery</small></small> | <small><small>Node test runner, ESLint 9, Playwright 1.63.0, GitHub Actions, documented Vercel host</small></small> |
 
 ## 17 / INSTRUMENTATION
 
@@ -611,50 +611,50 @@ For a potential vulnerability, **contact the human repository owner privately** 
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<small><b><code>01 · LANGUAGES & RUNTIMES</code></b></small>
+<small><small><b><code>01 · LANGUAGES & RUNTIMES</code></b></small></small>
 
-<small>TypeScript / JavaScript ESM, Node.js 24, browser canvas and WebGL APIs.</small>
+<small><small>TypeScript / JavaScript ESM, Node.js 24, browser canvas and WebGL APIs.</small></small>
 </td>
 <td width="50%" valign="top">
-<small><b><code>02 · FRONTEND & UI</code></b></small>
+<small><small><b><code>02 · FRONTEND & UI</code></b></small></small>
 
-<small>Next.js App Router, React 19, GSAP ScrollTrigger / SplitText, Tailwind preflight, CSS modules, next/font.</small>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<small><b><code>03 · BACKEND & API</code></b></small>
-
-<small>Next.js route handler: JSON input, request validation and SSE pass-through.</small>
-</td>
-<td width="50%" valign="top">
-<small><b><code>04 · AI & AUTOMATION</code></b></small>
-
-<small>External Dify AI orchestration accessed from the server. No AI model is hosted or trained in this repository.</small>
+<small><small>Next.js App Router, React 19, GSAP ScrollTrigger / SplitText, Tailwind preflight, CSS modules, next/font.</small></small>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<small><b><code>05 · DATA & STORAGE</code></b></small>
+<small><small><b><code>03 · BACKEND & API</code></b></small></small>
 
-<small>Versioned repository assets; Upstash counter when configured; ephemeral in-memory fallback and browser conversation ID.</small>
+<small><small>Next.js route handler: JSON input, request validation and SSE pass-through.</small></small>
 </td>
 <td width="50%" valign="top">
-<small><b><code>06 · DELIVERY & OPERATIONS</code></b></small>
+<small><small><b><code>04 · AI & AUTOMATION</code></b></small></small>
 
-<small>GitHub Actions CI, standalone project contract, Vercel deployment path, explicit owner-controlled releases and rollback.</small>
+<small><small>External Dify AI orchestration accessed from the server. No AI model is hosted or trained in this repository.</small></small>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<small><b><code>07 · TESTING & QA</code></b></small>
+<small><small><b><code>05 · DATA & STORAGE</code></b></small></small>
 
-<small>`node --test` for leaf modules and rate limits, Playwright Chromium journey cases, ESLint, TypeScript and production build.</small>
+<small><small>Versioned repository assets; Upstash counter when configured; ephemeral in-memory fallback and browser conversation ID.</small></small>
 </td>
 <td width="50%" valign="top">
-<small><b><code>08 · SECURITY & OBSERVABILITY</code></b></small>
+<small><small><b><code>06 · DELIVERY & OPERATIONS</code></b></small></small>
 
-<small>Input/rate controls, response headers, server-side keys, Vercel runtime logs and explicitly recorded audit gaps.</small>
+<small><small>GitHub Actions CI, standalone project contract, Vercel deployment path, explicit owner-controlled releases and rollback.</small></small>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<small><small><b><code>07 · TESTING & QA</code></b></small></small>
+
+<small><small>`node --test` for leaf modules and rate limits, Playwright Chromium journey cases, ESLint, TypeScript and production build.</small></small>
+</td>
+<td width="50%" valign="top">
+<small><small><b><code>08 · SECURITY & OBSERVABILITY</code></b></small></small>
+
+<small><small>Input/rate controls, response headers, server-side keys, Vercel runtime logs and explicitly recorded audit gaps.</small></small>
 </td>
 </tr>
 </table>
@@ -663,16 +663,16 @@ For a potential vulnerability, **contact the human repository owner privately** 
 
 ### Documentation map
 
-| Concern | Canonical reference |
+| <small>Concern</small> | <small>Canonical reference</small> |
 |---|---|
-| <small>Purpose and users</small> | <small>[Product scope](docs/product-scope.md)</small> |
-| <small>Architecture and motion</small> | <small>[Architecture](docs/architecture.md) · [Neural journey](docs/neural-journey.md)</small> |
-| <small>Setup and testing</small> | <small>[Development](docs/development.md) · [Testing](docs/testing.md) · [Verification record](docs/verification.md)</small> |
-| <small>Vera API and persistence</small> | <small>[Integrations](docs/integrations.md) · [Data](docs/data.md)</small> |
-| <small>Security and clinical boundary</small> | <small>[Security](docs/security.md) · [Regulatory safety](docs/regulatory-safety.md)</small> |
-| <small>Production operations</small> | <small>[Deployment](docs/deployment.md) · [Runbook](docs/runbook.md) · [Troubleshooting](docs/troubleshooting.md) · [Observability](docs/observability.md)</small> |
-| <small>Governance and decisions</small> | <small>[Governance](docs/governance.md) · [Agent guidance](AGENTS.md) · [Decision log](.agents/DECISIONS.md)</small> |
-| <small>Brand kit</small> | <small>[Brand identity README](docs/brand/README_START_HERE.md)</small> |
+| <small><small>Purpose and users</small></small> | <small><small>[Product scope](docs/product-scope.md)</small></small> |
+| <small><small>Architecture and motion</small></small> | <small><small>[Architecture](docs/architecture.md) · [Neural journey](docs/neural-journey.md)</small></small> |
+| <small><small>Setup and testing</small></small> | <small><small>[Development](docs/development.md) · [Testing](docs/testing.md) · [Verification record](docs/verification.md)</small></small> |
+| <small><small>Vera API and persistence</small></small> | <small><small>[Integrations](docs/integrations.md) · [Data](docs/data.md)</small></small> |
+| <small><small>Security and clinical boundary</small></small> | <small><small>[Security](docs/security.md) · [Regulatory safety](docs/regulatory-safety.md)</small></small> |
+| <small><small>Production operations</small></small> | <small><small>[Deployment](docs/deployment.md) · [Runbook](docs/runbook.md) · [Troubleshooting](docs/troubleshooting.md) · [Observability](docs/observability.md)</small></small> |
+| <small><small>Governance and decisions</small></small> | <small><small>[Governance](docs/governance.md) · [Agent guidance](AGENTS.md) · [Decision log](.agents/DECISIONS.md)</small></small> |
+| <small><small>Brand kit</small></small> | <small><small>[Brand identity README](docs/brand/README_START_HERE.md)</small></small> |
 
 ### Contribution
 
@@ -690,17 +690,17 @@ For usage or operational issues, consult [the runbook](docs/runbook.md). Send se
 
 The following results distinguish **past recorded tests** from **checks performed during this README-only change**. No old result is presented as a fresh run.
 
-| Surface | Recorded status | Evidence / command | Limitation |
+| <small>Surface</small> | <small>Recorded status</small> | <small>Evidence / command</small> | <small>Limitation</small> |
 |---|---|---|---|
-| <small>Install</small> | <small>**PASS — 20 Nov 2026 record**</small> | <small>`node scripts/pnpm.mjs install --frozen-lockfile`</small> | <small>Historical evidence in `docs/verification.md`.</small> |
-| <small>Typecheck</small> | <small>**PASS — 20 Nov 2026 record**</small> | <small>`node scripts/pnpm.mjs run typecheck`</small> | <small>Not rerun for README revision.</small> |
-| <small>Lint</small> | <small>**PASS — 20 Nov 2026 record**</small> | <small>`node scripts/pnpm.mjs run lint`</small> | <small>Not rerun for README revision.</small> |
-| <small>Unit tests</small> | <small>**59/59 — 20 Nov 2026 record**</small> | <small>`node scripts/pnpm.mjs run test`</small> | <small>Does not cover full Vera widget / route.</small> |
-| <small>Build</small> | <small>**PASS — 20 Nov 2026 record**</small> | <small>`node scripts/pnpm.mjs run build`</small> | <small>Not rerun for README revision.</small> |
-| <small>Deployment dry-run</small> | <small>**PASS WITH LIMITATION — recorded**</small> | <small>`node scripts/pnpm.mjs run deploy:dry-run`</small> | <small>Secret-name check currently uses an empty list.</small> |
-| <small>Playwright E2E</small> | <small>**24/24 — 9 Oct 2026 record**</small> | <small>`node scripts/pnpm.mjs run test:e2e`</small> | <small>Predates Vera; not rerun on this revision.</small> |
-| <small>Standalone extraction</small> | <small>**UNVERIFIED**</small> | <small>Parent control-plane `pnpm run project:verify`</small> | <small>Not executed in available evidence.</small> |
-| <small>Live Vera / Dify and Upstash behavior</small> | <small>**UNVERIFIED IN THIS REVISION**</small> | <small>Owner-approved integration checks</small> | <small>Requires explicit access and real environment evidence.</small> |
+| <small><small>Install</small></small> | <small><small>**PASS — 20 Nov 2026 record**</small></small> | <small><small>`node scripts/pnpm.mjs install --frozen-lockfile`</small></small> | <small><small>Historical evidence in `docs/verification.md`.</small></small> |
+| <small><small>Typecheck</small></small> | <small><small>**PASS — 20 Nov 2026 record**</small></small> | <small><small>`node scripts/pnpm.mjs run typecheck`</small></small> | <small><small>Not rerun for README revision.</small></small> |
+| <small><small>Lint</small></small> | <small><small>**PASS — 20 Nov 2026 record**</small></small> | <small><small>`node scripts/pnpm.mjs run lint`</small></small> | <small><small>Not rerun for README revision.</small></small> |
+| <small><small>Unit tests</small></small> | <small><small>**59/59 — 20 Nov 2026 record**</small></small> | <small><small>`node scripts/pnpm.mjs run test`</small></small> | <small><small>Does not cover full Vera widget / route.</small></small> |
+| <small><small>Build</small></small> | <small><small>**PASS — 20 Nov 2026 record**</small></small> | <small><small>`node scripts/pnpm.mjs run build`</small></small> | <small><small>Not rerun for README revision.</small></small> |
+| <small><small>Deployment dry-run</small></small> | <small><small>**PASS WITH LIMITATION — recorded**</small></small> | <small><small>`node scripts/pnpm.mjs run deploy:dry-run`</small></small> | <small><small>Secret-name check currently uses an empty list.</small></small> |
+| <small><small>Playwright E2E</small></small> | <small><small>**24/24 — 9 Oct 2026 record**</small></small> | <small><small>`node scripts/pnpm.mjs run test:e2e`</small></small> | <small><small>Predates Vera; not rerun on this revision.</small></small> |
+| <small><small>Standalone extraction</small></small> | <small><small>**UNVERIFIED**</small></small> | <small><small>Parent control-plane `pnpm run project:verify`</small></small> | <small><small>Not executed in available evidence.</small></small> |
+| <small><small>Live Vera / Dify and Upstash behavior</small></small> | <small><small>**UNVERIFIED IN THIS REVISION**</small></small> | <small><small>Owner-approved integration checks</small></small> | <small><small>Requires explicit access and real environment evidence.</small></small> |
 
 <p align="center">
 <b>Architected and built by dr. Ferdi Iskandar (the Gaffer) · Sentra Artificial Intelligence.</b>
