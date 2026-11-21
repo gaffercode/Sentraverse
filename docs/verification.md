@@ -12,6 +12,21 @@ A change is acceptable when, from the capsule root:
 3. Vera changes are exercised against a stub or closed upstream (no real Dify calls in tests);
 4. the result is recorded here and in `.agents/HANDOFF.md`.
 
+## 2026-11-21 — secret scan before a commit and in CI (Claude Fable 5.2)
+
+Branch `chore/secret-scan-2026-11-21`, cut from `main` (`e8ca1ac`). Linux, Node 24.22.3, pnpm 11.21.0. Adds
+`scripts/secret-scan.mjs`, `.githooks/pre-commit`, `app/secret-scan.test.mjs` and a Secret scan step in the CI Lint
+job. No runtime file changed.
+
+| Command | Exit | Result |
+| --- | --- | --- |
+| `node --test app/secret-scan.test.mjs` before the script existed | 1 | 7 of 7 failed (expected) |
+| `lint`, `typecheck` | 0 | No findings |
+| `test` | 0 | 70/70 |
+| `node scripts/secret-scan.mjs` | 0 | every tracked file checked, no findings |
+
+NOT RUN: `build`, `deploy:dry-run`, `test:e2e`, live Vera.
+
 ## 2026-11-21 — capsule-local ignore tests (Claude Fable 5.2)
 
 Branch `fix/capsule-local-ignore-tests-2026-11-21`, cut from `main` (`bc8364e`). Linux, Node 24.22.3,

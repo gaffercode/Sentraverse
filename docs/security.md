@@ -23,6 +23,14 @@ Assets, controls and known gaps. Data classes are in [`data.md`](data.md).
   `frame-ancestors 'none'`.
 - **No identity.** There is no login, role or session; nothing to authorise.
 
+## Secret scan
+
+`scripts/secret-scan.mjs` refuses secrets (token formats, private keys, JSON Web Tokens, database URLs with a
+password, filled secrets in configuration files) and local data files (env files, keys, databases, dumps). CI runs
+it over every tracked file in the Lint job. To run it before each commit on your own clone, once:
+`git config core.hooksPath .githooks`. It never prints the value it found. A deliberate, harmless example line can
+carry the marker `secret-scan:allow`.
+
 ## Known gaps and risks
 
 - The CSP allows `'unsafe-inline'` and `'unsafe-eval'` for scripts (Next.js and GSAP inline needs).
