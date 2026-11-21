@@ -282,8 +282,9 @@ node scripts/pnpm.mjs run build
 node scripts/pnpm.mjs run deploy:dry-run
 ```
 
-`node scripts/pnpm.mjs run test` runs every `*.test.mjs` under `components/` (a glob,
-so a new test file runs without touching `package.json`; CI runs it on every push):
+`node scripts/pnpm.mjs run test` runs every `*.test.mjs` under `components/` and `app/` (two
+globs, so a new test file runs without touching `package.json`; CI runs it on every push; the
+`app/` tests are listed in `docs/testing.md`). Under `components/`:
 `tactile.test.mjs` (magnet pull, face placement and look), `face.test.mjs` (the analysis,
 `makeFace`, the feature-first growth order), `morphology.test.mjs`, `signal.test.mjs`,
 `film.test.mjs` (frame mapping, the versioned files on disk, the load order), `morph.test.mjs`

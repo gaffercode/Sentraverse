@@ -30,6 +30,10 @@ has no `.git` folder.
 
 NOT RUN: `build`, `deploy:dry-run` (no runtime file changed), `test:e2e`, live Vera.
 
+Second commit on the same branch (wording only): `AGENTS.md`, `docs/neural-journey.md` and a
+`ci.yml` comment now say the tests cover `components/` and `app/`, which is what the `test` script
+runs. `lint` and `test` re-run after it; see the pull request checks for the recorded result.
+
 ## 2026-11-21 — env template and ignore rules (Claude Fable 5.2)
 
 Branch `chore/env-contract-and-ignore-rules-2026-11-21`, cut from the public `main` (`c3541d3`) in a
