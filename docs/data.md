@@ -17,7 +17,8 @@ truncated SHA-256 hash reaches Upstash (`limit.test.mjs` asserts it).
 
 ## Environment variables
 
-Names only; values live in Vercel project settings or a local `.env.local` (git-ignored).
+Names only; values live in Vercel project settings or a local `.env.local` (git-ignored). The
+tracked `.env.example` lists the same names with empty values.
 
 | Name | Used by | Required |
 | --- | --- | --- |

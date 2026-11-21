@@ -27,8 +27,34 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Local env
+# Local env: every env file stays on the machine; only the example is tracked
+.env
+.env.*
+!.env.example
 .env*.local
+
+# Local databases, dumps and backups: real data never goes into Git
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.pgdump
+*.bak
+*.backup
+*.sql.gz
+*dump*.sql
+*backup*.sql
+backups/
+dumps/
+
+# Keys and credential files
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+service-account*.json
+credentials*.json
 
 # Vercel
 .vercel
