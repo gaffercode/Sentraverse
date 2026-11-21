@@ -1,5 +1,13 @@
 # HANDOFF
 
+## 2026-11-21 - Env template and ignore rules (Claude)
+
+- Branch `chore/env-contract-and-ignore-rules-2026-11-21`, cut from the public `main` (`c3541d3`) in a scratch clone. Local only, NOT pushed: Gaffer has not approved a push.
+- Added `.env.example` (the four names the site reads, empty values) and `.gitignore` rules for every env file, local databases, dumps, backups and key files; `.env.example` stays trackable.
+- New `app/env-contract.test.mjs` (4 tests, RED first) pins both: a variable read by the site but missing from `.env.example` fails, a filled key or token fails, an unignored secret or data path fails.
+- Verified: install, typecheck, lint, test 63/63, build, deploy:dry-run all exit 0 (Linux, Node 24.22.3, pnpm 11.21.0). E2E and live Vera NOT RUN.
+- Open for Gaffer: the same change must land in the monorepo capsule, or the next publish from the capsule drops it; `.agents/` and `.review-2026-11-12/` are public (keep or untrack); a pre-commit secret scan was not added (needs approval).
+
 ## 2026-11-20 - Published to gaffercode/Sentraverse, MIT (Claude)
 
 - Gaffer chose MIT for the public repo `gaffercode/Sentraverse` (its web-made LICENSE); capsule `LICENSE`, `package.json`, README and manifest follow (`bc978726`).

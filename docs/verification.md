@@ -12,6 +12,27 @@ A change is acceptable when, from the capsule root:
 3. Vera changes are exercised against a stub or closed upstream (no real Dify calls in tests);
 4. the result is recorded here and in `.agents/HANDOFF.md`.
 
+## 2026-11-21 — env template and ignore rules (Claude Fable 5.2)
+
+Branch `chore/env-contract-and-ignore-rules-2026-11-21`, cut from the public `main` (`c3541d3`) in a
+scratch clone of `gaffercode/Sentraverse`. Linux, Node 24.22.3, pnpm 11.21.0. Commands run via
+`node scripts/pnpm.mjs` on a clean clone.
+
+| Command | Finished (UTC) | Exit | Result |
+| --- | --- | --- | --- |
+| `install --frozen-lockfile` | 07:33 | 0 | Lockfile unchanged |
+| `typecheck` | 07:33 | 0 | No errors |
+| `lint` | 07:33 | 0 | No findings |
+| `test` | 07:33 | 0 | 63/63 (59 existing, 4 new in `app/env-contract.test.mjs`) |
+| `build` | 07:33 | 0 | Production build written |
+| `deploy:dry-run` | 07:33 | 0 | Artifact present, no server-only names in the client bundle |
+
+The four new tests were watched failing before the change: no `.env.example`; thirteen probe paths
+not ignored (`.env`, `.env.production`, a nested `.env`, SQLite and `.db` files, dumps, backups, key
+files); and, with the ignore rule in place but no exception, `.env.example` itself ignored.
+
+NOT RUN: `test:e2e` (no browser on this machine) and live Vera.
+
 ## 2026-11-20 — documentation pass (Claude Opus 5.5)
 
 Branch `docs/sentraverse-neural-srds`, capsule `projects/healthcare/sentraverse-neural`,

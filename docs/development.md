@@ -26,7 +26,8 @@ If 4346 is held by an earlier `next start`, stop it or verify on another port
 ## Configuration
 
 The journey needs no configuration. Vera needs `DIFY_API_KEY` (and optionally `DIFY_API_URL`,
-`KV_REST_API_URL`, `KV_REST_API_TOKEN`) in a git-ignored `.env.local`; see [`data.md`](data.md).
+`KV_REST_API_URL`, `KV_REST_API_TOKEN`) in a git-ignored `.env.local`, copied from the tracked
+[`.env.example`](../.env.example); see [`data.md`](data.md).
 Never commit values. Without a key the page works and Vera answers "not available".
 
 ## Workflow
