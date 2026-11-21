@@ -30,7 +30,15 @@ function variablesReadByTheSite() {
   const names = new Set();
   for (const dir of RUNTIME_DIRS) {
     for (const file of sourceFiles(join(root, dir))) {
-      for (const [, name] of readFileSync(file, 'utf8').matchAll(/process\.env\.([A-Z][A-Z0-9_]*)/g)) names.add(name);
+      const text = readFileSync(file, 'utf8');
+      for (const [, dotted, bracketed] of text.matchAll(/process\.env(?:\.([A-Z][A-Z0-9_]*)|\[["']([A-Z][A-Z0-9_]*)["']\])/g)) names.add(dotted ?? bracketed);
+      // const { A, B: alias } = process.env
+      for (const [, body] of text.matchAll(/\{([^{}]*)\}\s*=\s*process\.env\b/g)) {
+        for (const part of body.split(',')) {
+          const name = part.split(/[:=]/)[0].trim();
+          if (/^[A-Z][A-Z0-9_]*$/.test(name)) names.add(name);
+        }
+      }
     }
   }
   return [...names].filter((name) => !PLATFORM_VARIABLES.has(name)).sort();
@@ -82,6 +90,11 @@ test('.gitignore keeps local env files, databases, dumps and keys out of Git', {
     '.env.production',
     'apps/web/.env',
     'data.sqlite',
+    'local.db-wal',
+    'local.sqlite-journal',
+    '.envrc',
+    'dump.sql',
+    'prod-backup.sql',
     'local.sqlite3',
     'dev.db',
     'prod.dump',
@@ -98,5 +111,6 @@ test('.gitignore keeps local env files, databases, dumps and keys out of Git', {
 });
 
 test('.gitignore still lets .env.example be committed', { skip: !gitInstalled && 'git is not installed' }, () => {
-  assert.deepEqual(ignoredByThisCapsule(['.env.example']), []);
+  // A migration or a route whose name merely contains "backup" or "dump" must not vanish from Git.
+  assert.deepEqual(ignoredByThisCapsule(['.env.example', 'db/migrations/0006_backup_codes.sql', 'app/backups/page.tsx', 'src/dumps/index.ts']), []);
 });

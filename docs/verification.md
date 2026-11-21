@@ -12,6 +12,22 @@ A change is acceptable when, from the capsule root:
 3. Vera changes are exercised against a stub or closed upstream (no real Dify calls in tests);
 4. the result is recorded here and in `.agents/HANDOFF.md`.
 
+## 2026-11-21 — review fixes for the secret scan and ignore rules (Claude Fable 5.2)
+
+Branch `fix/review-findings-2026-11-21`, cut from `main` (`47b1b56`). Linux, Node 24.22.3, pnpm 11.21.0. Fixes the
+important findings of an independent review: a stronger scanner, visible exceptions, narrower ignore rules, a wider
+env-read detection in the contract test, and the scan as the first CI step. No runtime file changed.
+
+| Command | Exit | Result |
+| --- | --- | --- |
+| `node --test app/secret-scan.test.mjs` against the previous scanner | 1 | 9 of 12 failed (expected) |
+| `node --test app/env-contract.test.mjs` against the previous ignore rules | 1 | 2 of 4 failed (expected) |
+| `lint`, `typecheck` | 0 | No findings |
+| `test` | 0 | 75/75 |
+| `node scripts/secret-scan.mjs` | 0 | every tracked file checked, no findings |
+
+NOT RUN: `build`, `deploy:dry-run`, `test:e2e`, live Vera.
+
 ## 2026-11-21 — secret scan before a commit and in CI (Claude Fable 5.2)
 
 Branch `chore/secret-scan-2026-11-21`, cut from `main` (`e8ca1ac`). Linux, Node 24.22.3, pnpm 11.21.0. Adds

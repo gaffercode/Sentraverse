@@ -1,5 +1,13 @@
 # HANDOFF
 
+## 2026-11-21 - Review fixes for the secret scan and ignore rules (Claude)
+
+- Branch `fix/review-findings-2026-11-21`, cut from `main` (`47b1b56`). An independent review of the day's work found no critical defect and six important ones; this branch fixes them.
+- Scanner: adds the provider keys this site uses (Dify, OpenRouter, Resend, Clerk), URLs with a password (empty user, http basic auth), short, letters-only and lower-case secrets in configuration files, database dumps by header, data exports by name, UTF-16 text; names the files it could not read; the allow file must be tracked and exact, the marker must be a trailing comment, env files can never be allowed; a crash exits 2, not 1.
+- Ignore rules: `*dump*.sql`, `*backup*.sql`, `backups/` and `dumps/` could hide a migration or a route; they are now narrowed and anchored. SQLite side files and `.envrc` are ignored. `.gitattributes` keeps the hook file LF.
+- `app/env-contract.test.mjs` also sees `process.env['X']` and `const { X } = process.env`. CI runs the scan as the first step of the Lint job.
+- Verified: the 12 scanner tests failed 9 of 12 on the old scanner and pass on the new one; `lint`, `typecheck` exit 0; `test` 75/75; scanner over the whole tree: no findings. NOT RUN: `build`, `deploy:dry-run`, `test:e2e`, live Vera.
+
 ## 2026-11-21 - Secret scan before a commit and in CI (Claude)
 
 - Branch `chore/secret-scan-2026-11-21`, cut from `main` (`e8ca1ac`). Owner approved a pre-commit secret scan on 2026-11-21.

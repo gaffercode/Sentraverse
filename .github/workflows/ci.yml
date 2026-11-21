@@ -21,6 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # First step: refuses secrets and data files in any tracked file. Needs only the runner's Node and Git.
+      - name: Secret scan
+        run: node scripts/secret-scan.mjs
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -36,10 +40,6 @@ jobs:
 
       - name: Run ESLint
         run: pnpm lint
-
-      # Refuses secrets and local data files in any tracked file; needs only Node and Git.
-      - name: Secret scan
-        run: node scripts/secret-scan.mjs
 
   test:
     name: Unit tests

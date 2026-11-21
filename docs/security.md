@@ -25,11 +25,25 @@ Assets, controls and known gaps. Data classes are in [`data.md`](data.md).
 
 ## Secret scan
 
-`scripts/secret-scan.mjs` refuses secrets (token formats, private keys, JSON Web Tokens, database URLs with a
-password, filled secrets in configuration files) and local data files (env files, keys, databases, dumps). CI runs
-it over every tracked file in the Lint job. To run it before each commit on your own clone, once:
-`git config core.hooksPath .githooks`. It never prints the value it found. A deliberate, harmless example line can
-carry the marker `secret-scan:allow`.
+`scripts/secret-scan.mjs` needs only Node and Git and never prints the value it found.
+
+- **Refuses:** known token formats (Dify, OpenAI and OpenRouter, Anthropic, Clerk and Stripe secret keys, Resend,
+  Supabase, GitHub, npm, AWS, Google, Slack, webhook signing secrets, JSON Web Tokens), private keys, URLs that carry
+  a password, filled secrets in configuration files (a name ending in `KEY`, `TOKEN`, `SECRET`, `PASSWORD` or
+  `PASSCODE`), database dumps by their header, and by name: env files, key files, databases and data exports
+  (spreadsheets, CSV and similar).
+- **Cannot do:** tell real data from sample data inside an ordinary text, JSON or SQL file, or recognise a secret
+  that has no known shape. It is a net, not a proof; review still decides.
+- **When it runs:** the CI Lint job runs it first, over every tracked file, on each push; that is after the push is
+  already public. To stop a secret before it leaves your machine, activate the hook once per clone:
+  `git config core.hooksPath .githooks`. Inside the monorepo, leave its own hooks path alone and call the script
+  from there.
+- **Exceptions are visible:** a line may end with a comment holding `secret-scan:allow`; a tracked
+  `.secret-scan-allow` file may list exact paths or folders ending in `/`. Env files can never be listed. Every
+  exception used is counted in the output.
+
+For blocking at GitHub itself, turn on secret scanning push protection in the repository settings; that is the
+owner's switch and is independent of this script.
 
 ## Known gaps and risks
 

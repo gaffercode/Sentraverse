@@ -42,10 +42,16 @@ pnpm-debug.log*
 *.bak
 *.backup
 *.sql.gz
-*dump*.sql
-*backup*.sql
-backups/
-dumps/
+dump*.sql
+*[-_.]dump.sql
+backup*.sql
+*[-_.]backup.sql
+/backups/
+/dumps/
+*.sqlite-*
+*.sqlite3-*
+*.db-*
+.envrc
 
 # Keys and credential files
 *.key
