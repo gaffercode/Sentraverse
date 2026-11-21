@@ -30,6 +30,7 @@ with no runtime relative imports.
 | `signal.test.mjs`, `handoff.test.mjs`, `tactile.test.mjs` | Activity cycle, carrier handoff, pointer placement |
 | `app/api/vera/chat/limit.test.mjs` | Daily limit with TTL, hashed IP only, fallback when store is down or absent |
 | `app/env-contract.test.mjs` | Every variable the site reads is in `.env.example` with no secret value; `.gitignore` blocks env files, databases, dumps and keys |
+| `app/secret-scan.test.mjs` | `scripts/secret-scan.mjs` run for real in a temporary Git repository: a staged token, private key, filled secret, real-looking database password, local env file, key file or database file is refused and never echoed; placeholders, hashes and marked examples pass; `--staged` reads only the index |
 
 ## End-to-end (Playwright, Chromium)
 

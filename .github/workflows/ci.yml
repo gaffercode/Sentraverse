@@ -37,6 +37,10 @@ jobs:
       - name: Run ESLint
         run: pnpm lint
 
+      # Refuses secrets and local data files in any tracked file; needs only Node and Git.
+      - name: Secret scan
+        run: node scripts/secret-scan.mjs
+
   test:
     name: Unit tests
     runs-on: ubuntu-latest

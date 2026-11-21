@@ -364,6 +364,9 @@ node scripts/pnpm.mjs run dev
 
 Open **http://127.0.0.1:4346**.
 
+Recommended once per clone: `git config core.hooksPath .githooks`, so a commit that stages a secret or a local data
+file is refused (`scripts/secret-scan.mjs`).
+
 To run a local production build:
 
 ```bash

@@ -1,5 +1,12 @@
 # HANDOFF
 
+## 2026-11-21 - Secret scan before a commit and in CI (Claude)
+
+- Branch `chore/secret-scan-2026-11-21`, cut from `main` (`e8ca1ac`). Owner approved a pre-commit secret scan on 2026-11-21.
+- New `scripts/secret-scan.mjs` (zero dependencies: Node and Git) refuses token formats, private keys, JSON Web Tokens, database URLs with a password, filled secrets in configuration files, and local data files by name. It never prints the value. `.githooks/pre-commit` runs it on staged content once a clone sets `git config core.hooksPath .githooks`; the CI Lint job runs it over every tracked file.
+- New `app/secret-scan.test.mjs` (7 tests, RED first: all 7 failed before the script existed) runs the scanner in a temporary Git repository.
+- Verified: `lint`, `typecheck` exit 0; `test` 70/70; scanner over the whole tree: no findings. NOT RUN: `build`, `deploy:dry-run` (no runtime file changed), `test:e2e`, live Vera.
+
 ## 2026-11-21 - Capsule-local ignore tests (Claude)
 
 - Branch `fix/capsule-local-ignore-tests-2026-11-21`, cut from `main` (`bc8364e`). Test-only change in `app/env-contract.test.mjs`.
