@@ -38,3 +38,5 @@
 
 # Diff drivers
 *.md diff=markdown
+# The commit hooks are shell scripts: they keep LF line endings on every platform.
+/.githooks/* text eol=lf
