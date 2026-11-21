@@ -12,6 +12,28 @@ A change is acceptable when, from the capsule root:
 3. Vera changes are exercised against a stub or closed upstream (no real Dify calls in tests);
 4. the result is recorded here and in `.agents/HANDOFF.md`.
 
+## 2026-11-21 — capsule-local ignore tests (Claude Fable 5.2)
+
+Branch `fix/capsule-local-ignore-tests-2026-11-21`, cut from `main` (`bc8364e`). Linux, Node 24.22.3,
+pnpm 11.21.0. Test-only change in `app/env-contract.test.mjs`: the capsule's `.gitignore` is now judged
+alone, in an empty temporary repository, instead of asking Git in place.
+
+Reason: asked in place, Git also applies the rules of a repository that encloses this folder. With the
+capsule nested in a larger repository and its own SQLite rules removed, the old test still passed; the
+new one fails and names `data.sqlite` and `local.sqlite3`. The four tests now also run in a tree that
+has no `.git` folder.
+
+| Command | Finished (UTC) | Exit | Result |
+| --- | --- | --- | --- |
+| `install --frozen-lockfile`, `lint`, `typecheck` | 08:00 | 0 | No findings |
+| `test` | 08:00 | 0 | 63/63 |
+
+NOT RUN: `build`, `deploy:dry-run` (no runtime file changed), `test:e2e`, live Vera.
+
+Second commit on the same branch (wording only): `AGENTS.md`, `docs/neural-journey.md` and a
+`ci.yml` comment now say the tests cover `components/` and `app/`, which is what the `test` script
+runs. `lint` and `test` re-run after it; see the pull request checks for the recorded result.
+
 ## 2026-11-21 — env template and ignore rules (Claude Fable 5.2)
 
 Branch `chore/env-contract-and-ignore-rules-2026-11-21`, cut from the public `main` (`c3541d3`) in a
