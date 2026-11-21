@@ -1,5 +1,11 @@
 # HANDOFF
 
+## 2026-11-21 - Capsule-local ignore tests (Claude)
+
+- Branch `fix/capsule-local-ignore-tests-2026-11-21`, cut from `main` (`bc8364e`). Test-only change in `app/env-contract.test.mjs`.
+- The two `.gitignore` tests asked Git in place, so inside a larger repository they also saw that repository's rules: a gap in the capsule's own `.gitignore` could pass unnoticed. They now copy the capsule's `.gitignore` into an empty temporary repository and judge it alone (global excludes switched off, `GIT_*` variables dropped).
+- Verified: nested scenario with a gap fails as it should, intact passes; standalone 4/4; a tree without `.git` 4/4; suite 63/63; lint and typecheck exit 0.
+
 ## 2026-11-21 - Env template and ignore rules (Claude)
 
 - Branch `chore/env-contract-and-ignore-rules-2026-11-21`, cut from the public `main` (`c3541d3`) in a scratch clone. Local only, NOT pushed: Gaffer has not approved a push.

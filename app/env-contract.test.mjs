@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { readdirSync, readFileSync } from 'node:fs';
+import { copyFileSync, mkdtempSync, readdirSync, readFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { test } from 'node:test';
 import { fileURLToPath } from 'node:url';
@@ -44,11 +45,24 @@ function envExample() {
   return entries;
 }
 
-function isIgnored(path) {
-  return spawnSync('git', ['check-ignore', '--quiet', '--no-index', path], { cwd: root }).status === 0;
-}
+// The capsule's own `.gitignore` is judged alone, in an empty temporary repository. Asked in place, Git would
+// also apply the rules of any repository that encloses this folder and the developer's global excludes, and
+// the capsule must not lean on either.
+const gitEnv = Object.fromEntries(Object.entries(process.env).filter(([name]) => !name.startsWith('GIT_')));
+const gitInstalled = spawnSync('git', ['--version'], { env: gitEnv }).status === 0;
 
-const insideGit = spawnSync('git', ['rev-parse', '--is-inside-work-tree'], { cwd: root }).status === 0;
+function ignoredByThisCapsule(paths) {
+  const sandbox = mkdtempSync(join(tmpdir(), 'capsule-ignore-'));
+  try {
+    spawnSync('git', ['init', '--quiet'], { cwd: sandbox, env: gitEnv });
+    copyFileSync(join(root, '.gitignore'), join(sandbox, '.gitignore'));
+    const ask = (path) =>
+      spawnSync('git', ['-c', 'core.excludesFile=', 'check-ignore', '--quiet', '--no-index', path], { cwd: sandbox, env: gitEnv }).status === 0;
+    return paths.filter(ask);
+  } finally {
+    rmSync(sandbox, { recursive: true, force: true });
+  }
+}
 
 test('.env.example lists every environment variable the site reads', () => {
   const documented = envExample();
@@ -61,7 +75,7 @@ test('.env.example holds no value for keys, tokens, secrets or passwords', () =>
   assert.deepEqual(filled.map(([name]) => name), []);
 });
 
-test('.gitignore keeps local env files, databases, dumps and keys out of Git', { skip: !insideGit && 'not a Git checkout' }, () => {
+test('.gitignore keeps local env files, databases, dumps and keys out of Git', { skip: !gitInstalled && 'git is not installed' }, () => {
   const mustBeIgnored = [
     '.env',
     '.env.local',
@@ -79,9 +93,10 @@ test('.gitignore keeps local env files, databases, dumps and keys out of Git', {
     'id_rsa',
     'service-account.json',
   ];
-  assert.deepEqual(mustBeIgnored.filter((path) => !isIgnored(path)), []);
+  const ignored = ignoredByThisCapsule(mustBeIgnored);
+  assert.deepEqual(mustBeIgnored.filter((path) => !ignored.includes(path)), []);
 });
 
-test('.gitignore still lets .env.example be committed', { skip: !insideGit && 'not a Git checkout' }, () => {
-  assert.equal(isIgnored('.env.example'), false);
+test('.gitignore still lets .env.example be committed', { skip: !gitInstalled && 'git is not installed' }, () => {
+  assert.deepEqual(ignoredByThisCapsule(['.env.example']), []);
 });
